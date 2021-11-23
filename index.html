@@ -8,90 +8,71 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
     <main>
       <div class="container">
         <div class="avatar">
           <span>
-            <img src="images/build.svg" alt="Selo RocketSeat" />
+            <img src="images/build.svg" alt="Selo Rocketseat" />
           </span>
           <img
             src="https://lorempixel.com/185/185/people/"
             alt="Foto pessoal"
+            id="userImage"
           />
         </div>
 
-        <h id="userName">Bruno Mello</h1>
-        <a href="https://github.com/Brunomello-xD" target="_blank">
-          <img src="/images/github.svg" alt="Ícone GitHub" />
-          brunomello-xD
-        </a>
+        <h1 id="userName">Bruno Mello</h1>
+        <a
+          id="userLink"
+          href="https://github.com/Brunomello-xD"
+          target="_blank"
+        >
+          <img src="images/github.svg" alt="ícone github" />
+          <span id="userLogin">Brunomello-xD</span></a
+        >
 
-        <p>An instructor focused on helping pople start programming for web.</p>
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
 
         <ul id="socialLinks">
-          <li class='youtube'>
-            <a href="https://youtube.com" target="_blank" >
-              <img
-                src="/images/youtube.svg"
-                alt="Ícone YouTube"
-                
-              />
+          <li class="youtube">
+            <a
+              href="https://youtube.com/channel/UCVZxDWVGIImFxjM5y1FmCww"
+              target="_blank"
+            >
+              <img src="images/youtube.svg" alt="ícone youtube" />
             </a>
           </li>
-          <li class='facebook'>
-            <a href="https://facebook.com" target="_blank">
-              <img
-                src="/images/facebook.svg"
-                alt="Ícone Facebook"
-                
-              />
+          <li class="facebook">
+            <a
+              href="https://facebook.com/profile.php?id=100018304720844"
+              target="_blank"
+            >
+              <img src="images/facebook.svg" alt="ícone facebook" />
             </a>
           </li>
-          <li class='instagram'>
-            <a href="https://instagram.com" target="_blank">
-              <img
-                src="/images/instagram.svg"
-                alt="Ícone Instagram"
-                
-              />
+          <li class="instagram">
+            <a href="https://instagram.com/brunomello_o" target="_blank">
+              <img src="images/instagram.svg" alt="ícone instagram" />
             </a>
           </li>
-          <li class='twitter'>
-            <a href="https://twitter.com" target="_blank">
-              <img
-                src="/images/twitter.svg"
-                alt="Ícone Twitter"
-                
-              />
+          <li class="twitter">
+            <a href="https://twitter.com/404" target="_blank">
+              <img src="images/twitter.svg" alt="ícone twitter" />
             </a>
           </li>
         </ul>
       </div>
     </main>
-    <script>
-      const linksSocialMedia = {
-        github: 'Brunomello-xD',
-        youtube: 'channel/UCVZxDWVGIImFxjM5y1FmCww',
-        facebook: 'profile.php?id=100018304720844',
-        instagram: 'brunomello_o',
-        twitter: '404'
-      }
 
-      function changeSocialMediaLinks() {
-        for(let li of socialLinks.children) {
-          const social = (li.getAttribute('class'))
-          li.children[0].href= `https://${social}.com/${linksSocialMedia[social]}`
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
